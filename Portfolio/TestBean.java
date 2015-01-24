@@ -1,20 +1,16 @@
-package test;
-
-import java.io.Serializable;
-import java.util.Verctor;
-
-public class TestBean implements Serializable {
-	
-	private static final long serialVersionUID = 1L;
-	private boolean testBoolean;
-	private String testString;
-	private Vector testVector;
-
-	public TestBean() {
-
-
-
-	}
-
-	
-}
+package mypack;  
+public class Employee implements java.io.Serializable{  
+private int id;  
+private String name;  
+  
+public Employee(){}  
+  
+public void setId(int id){this.id=id;}  
+  
+public int getId(){return id;}  
+  
+public void setName(String name){this.name=name;}  
+  
+public String getName(){return name;}  
+  
+}  
