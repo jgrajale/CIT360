@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class SerializeDemo
+public class Serialize
 {
    public static void main(String [] args)
    {

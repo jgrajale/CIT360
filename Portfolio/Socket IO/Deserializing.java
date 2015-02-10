@@ -1,5 +1,5 @@
 import java.io.*;
-public class DeserializeDemo
+public class Deserialize
 {
    public static void main(String [] args)
    {
