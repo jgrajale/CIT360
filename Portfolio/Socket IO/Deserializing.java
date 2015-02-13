@@ -1,14 +1,14 @@
 import java.io.*;
-public class Deserialize
+public class Desirialize
 {
    public static void main(String [] args)
    {
-      Employee e = null;
+      SomePerson s = null;
       try
       {
-         FileInputStream fileIn = new FileInputStream("/tmp/employee.ser");
+         FileInputStream fileIn = new FileInputStream("/Users/jonathangrajales/Desktop/SomePerson.html");
          ObjectInputStream in = new ObjectInputStream(fileIn);
-         e = (Employee) in.readObject();
+         s = (SomePerson) in.readObject();
          in.close();
          fileIn.close();
       }catch(IOException i)
@@ -17,14 +17,13 @@ public class Deserialize
          return;
       }catch(ClassNotFoundException c)
       {
-         System.out.println("Employee class not found");
+         System.out.println("SomePerson class not found");
          c.printStackTrace();
          return;
       }
-      System.out.println("Deserialized Employee...");
-      System.out.println("Name: " + e.name);
-      System.out.println("Address: " + e.address);
-      System.out.println("SSN: " + e.SSN);
-      System.out.println("Number: " + e.number);
+      System.out.println("Person Information:");
+      System.out.println("Name: " + s.name);
+      System.out.println("major: " + s.major);
+      System.out.println("Cell: " + s.cell);
     }
 }
