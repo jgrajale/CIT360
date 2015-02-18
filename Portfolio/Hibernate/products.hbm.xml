@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="net.viralpatel.hibernate">
+
+	<class name="Products" table="PRODUCTS">
+		<id name="productId" column="PRODUCTID">
+			<generator class="native" />
+		</id>
+
+		<property name="categoryID" column="CATEGORYID" type="integer"/>
+		<property name="productCode" column="PRODUCTCODE" type="string" />
+		<property name="productName" column="PRODUCTNAME" type="string" />
+		<property name="listPrice" column="LISTPRICE" type="long"/>
+
+
+  		<many-to-one name="Categories" class="src.hibernate.Categories" fetch="select">
+            <column name="categoryID" not-null="true" />
+        </many-to-one>
+
+	</class>
+</hibernate-mapping>
