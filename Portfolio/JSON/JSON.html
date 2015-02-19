@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	var john = {user:"Jonh", from:"Chicago", major:"CIT"};
+	var sam = { user:"Sam", from:27, major:"CIT" };
+	var matt = { user:"Matt", from:19, major:"Dance" };
+	
+	// Nestes Objects within objects
+
+	var group = { u1:john, u2:sam, u3:matt };
+
+	document.write(john.user+" is from "+john.from+" and his major is "+john.major);
+	
+	// This will change the value of the object 
+	john.from = "Arizona"
+	john.major = "Construction";
+
+	document.write("<hr >");
+	document.write(john.user+" is from "+john.from+" and his major is "+john.major);
+	document.write("<hr >")
+	document.write(group.u2.user+" and "+group.u1.user+" like to "+group.u3.major);
+	
+	// You can use both ways to get the data 
+	document.write("<hr >");
+	document.write(group.u2.user);
+	document.write("<hr >");
+    document.write(group["u2"]["user"]);
+
+	// Arrays nested inside of objects
+	document.write("<hr />");
+	var obj1 = ["park","movies","restaurant"];
+	var obj2 = ["John","Matt","Sam","Peter"];
+	var obj3 = { arr1:obj1, arr2:obj2 };
+	document.write(obj3.arr2[0]+" and "+obj3.arr2[2]+" are "+group.u1.major+" majors ");
+    
+    // Change the object back to original
+	document.write("<hr >");
+	john.major = "CIT";
+
+	document.write(obj3.arr2[0]+" and "+obj3.arr2[2]+" are "+group.u1.major+" majors ");
+
+
+</script>
+</head>
+<body>	
+</body>
+</html>

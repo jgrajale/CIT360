@@ -1,0 +1,9 @@
+{ 
+  "u1":{ "user":"John", "from":"KY", "major":"CIT" },
+  "u2":{ "user":"Nate", "from":"NY", "major":"Condtruction" },
+  "u3":{ "user":"Mary", "from":"AZ", "major":"Engineering" }, 
+  "u4":{ "user":"Rick", "from":"ID", "major":"Architecture" },
+  "u5":{ "user":"Joseph", "from":"UT", "major":"Dance" },
+  "u6":{ "user":"Peter", "from":"IL", "major":"CIT" },
+
+}

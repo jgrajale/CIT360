@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function ajax_get_json(){
+	var results = document.getElementById("results");
+    var hr = new XMLHttpRequest();
+
+    // Gets the data from list.json
+    
+    hr.open("GET", "list.json", true);
+    hr.setRequestHeader("Content-type", "application/json", true);
+    hr.onreadystatechange = function() {
+	    if(hr.readyState == 4 && hr.status == 200) {
+		    var data = JSON.parse(hr.responseText);
+			results.innerHTML = "";
+
+			// Loop that will get every object and display it
+
+			for(var obj in data){
+				results.innerHTML += data[obj].user+" is from "+data[obj].from+" and is majoring in "+data[obj].major+"<hr />";
+			}
+	    }
+    }
+    hr.send(null);
+
+    //Using annimated Gif 
+
+    results.innerHTML = '<img src="ajax-loader.gif" alt="Loading..." /> Requesting...';
+}
+</script>
+</head>
+<body>
+<div id="results"></div>
+<script>ajax_get_json();</script>
+</body>
+</html>
