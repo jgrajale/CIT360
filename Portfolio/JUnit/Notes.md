@@ -11,4 +11,4 @@
  * **Eclipse Help -**
  	* When looking for steps on creating a JUnit test, Eclipse offers the developer a great tutorial on how to write and run a JUnit test, to look at these steps you can go to help>help contents and type JUnit. 
 
- 	*In this folder there is a sample code that can help us see JUnit in action. 
+ 	* In this folder there is a sample code that can help us see JUnit in action. My sharing video is at https://www.youtube.com/watch?v=QA19r8sKar8
