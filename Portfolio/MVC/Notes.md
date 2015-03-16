@@ -1,7 +1,7 @@
 # MVC
 
 * **What is MVC -**
- * MVC Pattern stands for Model-View-Controller Pattern. This pattern is used to separate application's concerns.
+ * MVC Pattern stands for Model-View-Controller Pattern. This pattern is used to separate application's concerns. - Also refered as Data Interface Coordinator.
 
  * Model - Model represents an object or JAVA POJO carrying data. It can also have logic to update controller if its data changes.
 
