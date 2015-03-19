@@ -16,7 +16,6 @@ Extending a class is the way Java inherits methods and variables from a parent c
 
 Interfaces provide a way for programmers to lay the groundwork of a class. They are used to design the requirements for a set of classes to implement. The interface sets everything up, and the class or classes that implement the interface do all the work. 
 
- * Controller - Controller acts on both model and view. It controls the data flow into model object and updates the view whenever data changes. It keeps view and model separate.
 
  
 
