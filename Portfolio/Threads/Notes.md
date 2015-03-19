@@ -18,7 +18,6 @@ Interfaces provide a way for programmers to lay the groundwork of a class. They 
 
  * Controller - Controller acts on both model and view. It controls the data flow into model object and updates the view whenever data changes. It keeps view and model separate.
 
- * **What it does -**
- 	* Separates the data and calculations into the Model class, it separates the interface into the view class and the controller class coordinates the interaction between the model and the view class.  
+ 
 
  * In this folder there is an example of a calculator that multiplies, adds and subtracts using MVC 
