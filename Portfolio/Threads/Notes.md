@@ -40,3 +40,6 @@ Interfaces provide a way for programmers to lay the groundwork of a class. They 
 * If you make a new Thread with runnable as it's parameter, it will call the run method in a new Thread.
 
 **Creating a Runnable process block** 
+
+* A Runnable process block is a simple class that implements a run() method. Within the run() method is the actual task that needs to be executed by a running thread. By implementing a class with the Runnable interface, we ensure that the class holds a run() method.
+
