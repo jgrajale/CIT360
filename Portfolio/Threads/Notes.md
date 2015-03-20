@@ -33,10 +33,10 @@ Interfaces provide a way for programmers to lay the groundwork of a class. They 
 
 * Executor.java and PrintJob.java demonstrates how Executors work
 
-* ** Runnables**
+* **Runnables**
 
 * A Runnable is basically a type of class (Runnable is an Interface) that can be put into a thread, describing what the thread is supposed to do.
  
 * If you make a new Thread with runnable as it's parameter, it will call the run method in a new Thread.
 
-** Creating a Runnable process block** 
+**Creating a Runnable process block** 
