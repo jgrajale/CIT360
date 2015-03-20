@@ -39,7 +39,16 @@ Interfaces provide a way for programmers to lay the groundwork of a class. They 
  
 * If you make a new Thread with runnable as it's parameter, it will call the run method in a new Thread.
 
-**Creating a Runnable process block** 
+* **Creating a Runnable process block** 
 
 * A Runnable process block is a simple class that implements a run() method. Within the run() method is the actual task that needs to be executed by a running thread. By implementing a class with the Runnable interface, we ensure that the class holds a run() method.
 
+* There are examples of runnable process blocks on PrintJob.java, Threads.java and Racer.java
+
+**Android Handlers**
+
+* A Handler allows you to send and process Message and Runnable objects associated with a thread's MessageQueue. Each Handler instance is associated with a single thread and that thread's message queue. When you create a new Handler, it is bound to the thread / message queue of the thread that is creating it -- from that point on, it will deliver messages and runnables to that message queue and execute them as they come out of the message queue.
+
+* When a process is created for your application, its main thread is dedicated to running a message queue that takes care of managing the top-level application objects (activities, broadcast receivers, etc) and any windows they create. You can create your own threads, and communicate back with the main application thread through a Handler. This is done by calling the same post or sendMessage methods as before, but from your new thread. The given Runnable or Message will then be scheduled in the Handler's message queue and processed when appropriate.
+
+* The AndroidHandler folder contains a simple android project that demonstrates Android Handlers  
