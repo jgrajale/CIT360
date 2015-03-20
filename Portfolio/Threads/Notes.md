@@ -16,7 +16,24 @@ Extending a class is the way Java inherits methods and variables from a parent c
 
 Interfaces provide a way for programmers to lay the groundwork of a class. They are used to design the requirements for a set of classes to implement. The interface sets everything up, and the class or classes that implement the interface do all the work. 
 
+* Threads.java demonstrates how treads work and Race.java with Racer.java demonstrates how multithreading works.
 
+* **What are the Executors? -**
+
+ * The Executor framework is an abstraction layer over the actual implementation of java multithreading. It is the first concurrent utility framework in java and used for standardizing invocation, scheduling, execution and control of asynchronous tasks in parallel threads. The execution rules are defined during the creation of the constructor. And then the executor runs the concurrent threads following the rules set earlier.
+
+ * Executor implementation in java uses thread pools which consists of worker threads. The entire management of worker threads is handled by the framework. So the overhead in memory management is much reduced compared to earlier multithreading approaches. - see Exector1.gif
+
+ * **Create an Executor**
+
+ First you need to create an instance of an Executor or ExecutorService. The Executor class has a number of static factory methods to create an ExecutorService depending upon the requirement of the application. Following are two main methods to create executor service.
+
+   * The newFixedThreadPool () returns a ThreadPoolExecutor instance with an initialized and unbounded queue and a fixed number of threads.
+   * The newCachedThreadPool () returns a ThreadPoolExecutor instance initialized with an unbounded queue and unbounded number of threads.
+
+* Executor.java and PrintJob.java demonstrates how Executors work
+
+* **
  
 
  * In this folder there is an example of a calculator that multiplies, adds and subtracts using MVC 
