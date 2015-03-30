@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BYU-Idaho Maps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Drawer Opened</string>
+    <string name="drawer_close">Drawer Closed</string>
+
+    <string-array name="drawer_list">
+        <item>Buildings</item>
+        <item>Activities</item>
+        <item>Crossroads</item>
+        <item>What\'s On Campus</item>
+        <item>Places to Eat</item>
+    </string-array>
+
+</resources>

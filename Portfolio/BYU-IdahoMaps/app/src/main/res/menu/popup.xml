@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/campus"
+        android:title="Campus"
+        />
+
+    <item
+        android:id="@+id/austin"
+        android:title="Austin"
+        />
+
+    <item
+        android:id="@+id/icenter"
+        android:title="BYU-I Center"
+        />
+
+    <item
+        android:id="@+id/benson"
+        android:title="Benson"
+        />
+
+    <item
+        android:id="@+id/clarke"
+        android:title="Clarke"
+        />
+
+    <item
+        android:id="@+id/hart"
+        android:title="Hart"
+        />
+
+    <item
+        android:id="@+id/health"
+        android:title="Health Center"
+        />
+
+    <item
+        android:id="@+id/hinckley"
+        android:title="Hinckley"
+        />
+
+    <item
+        android:id="@+id/kimball"
+        android:title="Kimball"
+        />
+
+    <item
+        android:id="@+id/kirkham"
+        android:title="Kirkham"
+        />
+
+    <item
+        android:id="@+id/mc"
+        android:title="Manwaring"
+        />
+
+    <item
+        android:id="@+id/mckay"
+        android:title="McKay"
+        />
+
+    <item
+        android:id="@+id/ricks"
+        android:title="Ricks"
+        />
+
+    <item
+        android:id="@+id/romney"
+        android:title="Romney"
+        />
+
+    <item
+        android:id="@+id/smith"
+        android:title="Smith"
+        />
+
+    <item
+        android:id="@+id/snow"
+        android:title="Snow"
+        />
+
+    <item
+        android:id="@+id/spori"
+        android:title="Spori"
+        />
+
+    <item
+        android:id="@+id/taylor"
+        android:title="Taylor"
+        />
+</menu>
